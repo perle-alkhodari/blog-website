@@ -1,4 +1,6 @@
-
+body {
+    background-color: salmon;
+}
 
 .container {
     background-color: salmon;
@@ -10,23 +12,33 @@
     flex-direction: column;
     margin-top: 20px;
     margin-bottom: 20px;
+    height: 100vh;
     padding: 50px;
+}
+
+.narrow {
+    margin-right:15%;
+    margin-left: 15%;
 }
 
 .blog {
     padding:15px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
-#title {
+#blog-title {
     color: white;
+    font-weight: bolder;
 }
 
 #summary {
-    color: saddlebrown;
+    color: brown;
 }
 
 #footer {
     margin-top: auto;
+    color: brown;
 }
 
 input {
@@ -54,4 +66,27 @@ input {
 
 textarea {
     width: 100%;
+}
+
+.primary-header-button {
+    background-color: brown;
+    border-radius: 5px;
+    color: white;
+}
+
+a.nav-link
+{
+   color: white;
+   text-decoration: none;
+}
+a.nav-link:hover
+{
+   color: brown;
+   text-decoration: none;
+}
+
+a.home:hover
+{
+   color: salmon;
+   text-decoration: none;
 }

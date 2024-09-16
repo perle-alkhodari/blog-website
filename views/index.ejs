@@ -5,7 +5,7 @@
     <% if (locals.blogs) { %>
         <% for(const prop in locals.blogs) { %>
             <div class="blog">
-                <h1 id="title"><%= prop %></h1>
+                <h1 id="blog-title"><%= prop %></h1>
                 <h4 id="summary"> <%= locals.blogs[prop] %> </h4>
             </div>
         <% } %>

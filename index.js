@@ -12,13 +12,16 @@ var blogs = {
     "title": "story",
     "title2": "story2"
 }
+var currentYear = new Date().getFullYear();
 
 // Middlewares
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 app.use((req, res, next) => {
+
     res.locals = {
         blogs: blogs,
+        year: currentYear
     }
     next();
 })
