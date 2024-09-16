@@ -1,0 +1,11 @@
+<%- include("partials/header") %>
+
+
+    <form class="container" id="form" action="/change-post" method="POST">
+        <% if (locals.notFound) { %>
+            <h2>Cannot edit non existing blog....</h2>
+           <% } %>
+        <%- include("partials/form.ejs") %>
+    </form>
+
+<%- include("partials/footer") %>

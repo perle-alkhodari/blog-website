@@ -1,0 +1,14 @@
+<%- include("partials/header.ejs") %>
+
+<form action="/del" id="form" class="container" method="POST">
+    <% if (locals.notFound) { %>
+     <h2>That blog doesn't exist...</h2>
+    <% } %>
+    <div class="form-title-group">
+      <label for="title">Title of blog to delete</label>
+      <input type="text" name="title" class="form-control" id="title" placeholder="Blog Title">
+      <button type="submit" class="btn btn-outline-light form-btn">Post</button>
+    </div>
+</form>
+
+<%- include("partials/footer.ejs") %>

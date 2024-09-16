@@ -1,0 +1,57 @@
+
+
+.container {
+    background-color: salmon;
+    border-radius: 0.5rem;
+}
+
+.full-screen {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 50px;
+}
+
+.blog {
+    padding:15px;
+}
+
+#title {
+    color: white;
+}
+
+#summary {
+    color: saddlebrown;
+}
+
+#footer {
+    margin-top: auto;
+}
+
+input {
+    color: brown !important
+}
+
+#form {
+    padding: 50px;
+    margin-top: 20px;
+    color: white;
+    font-weight: bolder;
+}
+
+.form-title-group {
+    padding: 10px;
+}
+
+.form-summary-group {
+    padding: 10px;
+}
+
+.form-btn {
+    margin-top: 7px;
+}
+
+textarea {
+    width: 100%;
+}
